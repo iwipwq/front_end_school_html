@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 크기 단위</title>
+    <style>
+        
+        html, body{
+            font-size: 10px;
+        }
+        
+        p{
+            font-size: 2em; /*부모요소(body)기본 픽셀(16px)의 2배*/
+            font-weight: 900; /* em은 배수단위라 고정단위인 px보다 수정이 편리하다 */
+        }
+
+        div{
+            font-size: 2em;
+        }
+
+        .one{
+            font-size: 2rem; /* rem= 최상위 요소를 따른다 */
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>hello world</h1>
+    <p>hello world</p>
+    <!-- em, %, rem, vw, vh -->
+
+    <div>
+        <!--10px *2 = 20px-->
+        <div>
+            <!--20px*2 = 40px-->
+            <div class="one"> <!-- html의 두배 위의 계산무시 (클래스 선택자가 높기때문)-->
+                <!--40px*2 = 80px-->
+                hello world</div>
+        </div>
+    </div>
+</body>
+</html>

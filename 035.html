@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소 선택자</title>
+</head>
+
+<style>
+
+    p::after {     /*개발자 모드에서 cm는 안보이고 ::after라고 나옴* 화면에서도 cm는 블럭설정할 수 없음 */
+        content: 'cm'
+    }
+
+    p::before {
+        content: '!!'
+    }
+
+</style>
+
+
+<body>
+    <p>10</p>
+</body>
+</html>

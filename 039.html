@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 단위</title>
+
+    <style>
+        .one{
+            height:200px;
+            width: 50%;
+            background-color: darkblue;
+        }
+
+        .two{
+            height: 100px;
+            width: 50%;
+            background-color: red; /*부모가 가진 넓이의 절반*/
+        }
+
+        .three {
+            height: 100px;
+            width: 50vw;
+            background-color: red; /* vw(뷰포트위드)는 부모의 상속에서 벗어나 보이는 화면에 따라 크기가 달라짐 */
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="one">
+        <div class="two"></div>
+    </div>
+    <br>
+    <div class="one">
+        <div class="two"></div>
+    </div>
+</body>
+</html>
