@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+
+    <style>
+        .top{
+            background:lemonchiffon ;
+            width: 100%; /*-- width 100%는 불필요하다 원래 그 줄을 다 차지하고 있는 블록요소이기때문! */
+            height: 250px;
+        }
+
+        .main{ 
+            
+            background:blanchedalmond ;
+            width: 100%;
+            height: 400px; /*부모가 되는 요소의 높이값은 지정해 주지 않는것이 좋다 왜냐
+            자식의 수치가 바뀔 수 있음. */
+        }
+
+        .one{
+            float: left;
+            
+            background: burlywood;
+            width: 33.333%;
+            height:400px;
+        }
+        
+        .two{float: left;
+            background: cornflowerblue;
+            width: 33.333%;
+            height: 400px;
+        }
+        
+        .three{ float: left;
+            background: coral;
+            width: 33.333%;
+            height: 400px;
+        }
+
+        .bottom{
+            background:aquamarine ;
+            width: 100%;
+            height: 250px;
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+    
+    <section class="top"></section>
+    <section class="main">
+        <article class="one"></article>
+        <article class="two"></article>
+        <article class="three"></article>
+    </section>
+    <section class="bottom"></section>
+
+
+</body>
+</html>

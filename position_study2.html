@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positionstudy</title>
+</head>
+
+    <style>
+
+        .one{
+            background: rgb(141, 95, 160);
+            border: 2px solid rgb(48, 48, 48);
+            clear: both;
+        }
+
+        .two{
+            margin: 50px 50px 50px 50px;
+            background: rgb(255, 203, 91);
+            border: 1px dotted rgb(22, 22, 22);
+            clear: both;
+        }
+
+        .three{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background: rgb(44, 211, 155);
+        }
+
+        .four{
+            float:right;
+            width: 200px;
+            height: 200px;
+            background: rgb(253, 121, 59);
+        }
+
+        /* .five{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background: rgb(39, 23, 12);
+        } */
+        /* .clear{
+
+            clear: both;
+        } */
+
+        /* .six{
+            float:left;
+            width: 200px;
+            height: 200px;
+            background: lightcoral;
+        } */
+
+        .two::after{
+            display: block;
+            content:'';
+            clear: both;
+        }
+
+
+    </style>
+
+<body>
+    
+    <div class="one">
+        <div class="two">
+            <!-- <div class="clear"></div> -->
+            <div class="three"></div>
+            <!-- <div class="clear"></div> -->
+            <div class="four"></div>
+            <div class="clear"></div>
+            <!-- <div class="five"></div>
+            <div class="six"></div> -->
+        </div>
+    </div>
+
+
+
+</body>
+</html>
