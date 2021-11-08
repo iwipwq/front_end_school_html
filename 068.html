@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naver회원가입로그인창</title>
+    
+    <link rel="stylesheet" href="reset.css">
+
+    <style>
+       
+        .login {
+            width: 315px;
+            height: 105px;
+            background: #f7f9fa;
+            padding: 16px 16px 12px 17px;
+            
+            border: 1px solid #dae1e6;
+            margin: 10px;
+        }
+
+        .sectionHeader{
+            width: 312px;
+            height: 16px;
+            padding-left: 3px;
+            font-size: 12px;
+
+            
+        }
+
+
+        .btnLogin{
+            display: block;
+            width: 313px;
+            height: 16px;
+            background: #19ce60;
+            margin-top: 11px;
+            border: 1px solid #15c654;
+            padding: 15px 0 15px 0;
+            text-align: center;
+            font-size: 12px;
+            color: white;
+            border-radius: 3px;
+        }
+
+        .logo{
+            right: 0px;
+            height: 13px;
+        }
+
+        ul{
+            height: 14px;
+        }
+
+        li{
+            display: inline-block;
+        }
+
+        .idpw{
+            font-size: 12px;
+            color: #404040;
+        }
+
+        .signUpSection{
+            float: right;
+            margin-bottom: 10px;
+            /* transform: translateY(-13px); */
+        }
+
+        .signUp{
+            font-size: 12px;
+            color: #404040;
+            right: 10px;
+            
+        }
+
+        .user{
+            padding-top: 8px;
+            width: 10px;
+            height: 12px;
+        }
+
+        .lock{
+            padding-top: 8px;
+            width: 10px;
+            height: 14px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <section class="login">
+        
+        <header class="sectionHeader">네이버를 더 안전하고 편리하게 이용하세요</header>
+        
+        
+        <a class="btnLogin" href="login.html"><img class="logo" src="images/title.png" alt="클릭하시면 네이버로그인 페이지로 넘어갑니다"> 로그인</a>
+        
+
+        <ul>
+            <li>
+                <img class="lock" src="images/lock.png" alt="자물쇠아이콘"> 
+                <a class="idpw"href="forgotId.html">아이디</a>
+            </li>
+            
+            <li>
+                <a class="idpw" href="forgotPw.html">비밀번호찾기</a>
+            </li>
+            
+            
+        </ul>
+        
+        <div class="signUpSection">
+            <img class="user" src="images/user.png"><a class="signUp" href="signUp.html">회원가입</a>
+        </div>
+    
+
+        
+
+
+
+    </section>
+
+</body>
+</html>

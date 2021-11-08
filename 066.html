@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docuemnt</title>
+    
+    <style>
+
+        ul {
+            /* display: inline-block; */
+        }
+
+        /*clear-fix */
+        .clear-fix::after{  /*요소의 가장 마지막 자식으로 존재하지 않는 가상의 자식요소를 만든다 */
+            display: block; /* ::before 요소의 가장 첫번째 자식으로 존재하지 않는 가상의 자식요소를 만든다 */
+            content: '';
+            clear: both;
+        }
+
+        li{
+            float: left;
+            width: 300px;
+            height: 100px;
+            background: pink;
+        }
+
+        /* li:nth-child(2) {
+            width: 80%;
+            float: left;
+            background:royalblue;
+            
+        } */
+
+        /* li:nth-child(3){
+            clear: left;
+        } */
+
+    </style>
+
+
+</head>
+<body>
+    
+
+<ul class="clearfix">
+    <li></li>
+    <li></li>
+    <li>asdfasdf</li>
+</ul>
+
+</body>
+</html>

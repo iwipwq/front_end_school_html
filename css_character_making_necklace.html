@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Character</title>
+
+    <style>
+
+        body{
+            background: rgb(255, 91, 42);
+            
+            
+        }
+
+        .leftarm {
+            position: absolute;
+            margin-top: 500px;
+            margin-left: 150px;
+            background: rgb(41, 41, 41);
+            border-radius: 0 0 50px 50px;
+            width: 100px;
+            height: 200px;
+        }
+
+        .rightarm{
+            position: absolute;
+            margin-top: 500px;
+            margin-left: 500px;
+            background: rgb(41, 41, 41);
+            border-radius: 0 0 50px 50px;
+            width: 100px;
+            height: 200px;
+        }
+
+        .necklace{
+            
+            position: absolute;
+            border-bottom: 20px dotted rgb(41, 41, 41);
+            border-radius: 0 0 50% 50%;
+            margin-left: 122px;
+            margin-top: 243px;
+            width: 500px;
+            font-size: 72px;
+            height: 200px;
+            text-align: center;
+            line-height: 427px;
+            /* transform: rotateZ(45deg); */
+            z-index: 6;
+            }
+
+        .earLeft{
+            margin-left: -50px;
+            
+            width: 200px;
+            height: 80px;
+            background: rgb(41, 41, 41);
+            border: 12px solid rgb(41, 41, 41);
+            border-bottom: 0px solid black;
+            border-radius: 112px 112px 0 0 ;
+            transform: translateY(-20px) rotateZ(-40deg);
+
+        }
+
+        .earBottomLeft{
+            margin-left: -12px;
+            margin-top: 78px;
+            width: 200px;
+            height: 50px;
+            background: rgb(41, 41, 41);
+            border: 12px solid rgb(41, 41, 41);
+            border-top: 0px solid black;
+            border-radius: 0 0 50% 50%;
+
+        }
+
+        .earRight{
+            margin-left: 320px;
+            
+            width: 200px;
+            height: 80px;
+            background: rgb(41, 41, 41);
+            border: 12px solid rgb(41, 41, 41);
+            border-bottom: 0px solid black;
+            border-radius: 112px 112px 0 0 ;
+            transform: translateY(-112px) rotateZ(40deg);
+
+        }
+
+
+        .earBottomRight{
+            margin-left: -12px;
+            margin-top: 78px;
+            width: 200px;
+            height: 50px;
+            background: rgb(41, 41, 41);
+            border: 12px solid rgb(41, 41, 41);
+            border-top: 0px solid black;
+            border-radius: 0 0 50% 50%;
+
+        }
+
+        .face{
+            
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+            width: 500px;
+            height: 500px;
+            background: rgb(228, 228, 228);
+            border: 20px solid rgb(41, 41, 41);
+            border-radius: 50% 50% 0 0;
+        }
+
+        .lower-body{
+            position: absolute;
+            width: 500px;
+            height: 100px;
+            background: rgb(228, 228, 228);
+            border: 20px solid rgb(41, 41, 41);
+            border-top: 0px solid rgb(41, 41, 41);
+            border-radius: 0 0 50% 50%;
+            margin-top: 300px;
+            margin-left: -20px;
+            margin-right: 0;
+            margin-bottom: 0;
+            z-index: 999;
+
+
+        }
+
+        .lefteye{
+            position: relative;
+            width: 80px;
+            height: 150px;
+            background: rgb(255, 91, 42);
+            border-radius: 50% 50% 50% 50% ;
+            transform: translateX(150%) translateY(-200%); /* rotateZ(30deg); */
+            z-index: 0;
+        }
+
+        .lefteyeshadow{
+            
+            width: 80px;
+            height: 150px;
+            background: rgb(41, 41, 41);
+            border-radius: 50% 50% 50% 50% ;
+            transform: translateX(-20%);
+            z-index: 1;
+        }
+
+        .righteye{
+            
+            position: relative;
+            width: 80px;
+            height: 150px;
+            background: rgb(255, 91, 42);
+            border-radius: 50% 50% 50% 50% ;
+            transform: translateX(400%) translateY(-300%); /*rotateZ(-30deg);*/
+            z-index: 0;
+        }
+
+        .righteyeshadow{
+            width: 80px;
+            height: 150px;
+            background: rgb(41, 41, 41);
+            border-radius: 50% 50% 50% 50% ;
+            transform: translateX(-20%);
+            z-index: 1;
+        }
+
+
+
+
+
+        .legLeft{
+            width: 50px;
+            height: 176px;
+            background: rgb(41, 41, 41);
+            transform: translateX(140px) translateY(-100%);
+            border: 12px solid rgb(41, 41, 41);
+            border-radius: 0 0 0 50px;
+            z-index: 0;
+            
+            
+
+        }
+
+        .legRight{
+            
+            width: 50px;
+            height: 176px;
+            background: rgb(41, 41, 41);
+            transform: translateX(290px) translateY(-200%);
+            border: 12px solid rgb(41, 41, 41);
+            border-radius: 0 0 0 50px;
+            z-index: 0;
+            
+        }
+
+        .shoeLeft{
+
+            width:100px;
+            height: 50px;
+            border-radius: 0 50px 50px 50px;
+            background: rgb(41, 41, 41);
+            transform: translateX(-9%) translateY(154%);
+            border: rgb(41, 41, 41) 12px solid;
+
+        }
+
+
+        .shoeRight{
+            width:100px;
+            height: 50px;
+            border-radius: 0 50px 50px 50px;
+            background: rgb(41, 41, 41);
+            transform: translateX(-12px) translateY(154%);
+            border: rgb(41, 41, 41) 12px solid;
+        }
+
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="necklace">
+        🎃
+    </div>
+
+    <div class="leftarm"></div>
+    <div class="rightarm"></div>
+
+    <div class="face">
+        <div class="ears">
+            
+            <div class="earLeft">
+                <div class="earBottomLeft"></div>
+            </div>
+            <div class="earRight">
+                <div class="earBottomRight"></div>
+            </div>
+        </div>
+        <div class="lower-body">
+            <div class="eyes">
+
+                <div class="lefteye">
+
+                    <div class="lefteyeshadow"></div>
+                </div>
+
+                <div class="righteye">
+
+                    <div class="righteyeshadow"></div>
+                </div>
+            </div>
+
+            <div class="leg">
+                <div class="legLeft">
+                    <div class="shoeLeft"></div>
+                </div>        
+                
+                <div class="legRight">
+                    <div class="shoeRight"></div>
+                </div>    
+            
+
+            </div>
+
+        </div>
+
+        <div class="mouth"></div>
+        
+        </div>
+        
+        
+    </div>
+
+    
+    
+    
+</body>
+</html>
