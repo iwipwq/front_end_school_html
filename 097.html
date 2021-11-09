@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+
+    <style>
+
+        @keyframes -solveRow1 {
+            from{
+            transform: scale(0.1) rotateX(360deg);
+            width: 500px;
+            height: 500px;
+            background-color: #f2994a;
+            }
+            to{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            transform: scale(1) ;
+            }
+        }
+
+        @keyframes -solveRow2 {
+            from{
+            position: absolute;
+            display: block;
+            float: left;
+            transform: scale(0.1) rotateX(360deg);
+            width: 500px;
+            height: 500px;
+            background-color: #573aff;
+            transition: all 1.2s;
+            }
+            to{
+            display: block;
+            float: left;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(255, 252, 93);
+            transform: scale(1);
+            /* rotateY(0deg); */
+            }
+        }
+
+
+
+        /*index.html*/
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+
+        .cont-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 800px;
+            transform: scale(0.1) rotateX(360deg);
+            transition: all 1.2s;
+        }
+        
+
+
+        .cont-card:hover{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 800px;
+            transform: scale(1) ;
+            
+
+
+        }
+
+        .item-card{
+            /* transform: scale(0.1) rotateX(360deg); */
+            width: 500px;
+            height: 500px;
+            background-color: #f2994a;
+            /* transition: all 1.2s; */
+        }
+
+        /* .item-card:hover{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            transform: scale(1) ;
+            rotateY(0deg);
+        } */
+
+        .item-card-backward{
+            position: absolute;
+            display: block;
+            float: left;
+            /* transform: scale(0.1) rotateX(360deg); */
+            width: 500px;
+            height: 500px;
+            background-color: #573aff;
+            /* transition: all 1.2s; */
+        }
+
+        /* .item-card-backward:hover{
+            display: block;
+            float: left;
+            width: 500px;
+            height: 500px;
+            background-color: rgb(255, 252, 93);
+            transform: scale(1) ;
+            rotateY(0deg);
+        } */
+
+
+    </style>
+
+</head>
+<body class="cont-card">
+    <div class="item-card-backward">
+        back
+    </div>
+    <div class="item-card">
+        <h1>hello world</h1>
+    </div>
+    
+
+    
+
+
+</body>
+</html>

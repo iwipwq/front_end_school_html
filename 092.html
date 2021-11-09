@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse</title>
+    <style>
+   
+    @keyframes -solveRow {
+        25% {
+            transform: translateX(400px);
+        }
+
+        50% {
+            transform: translateX(400px) translateY(400px);
+        }
+        
+        75% {
+            transform: translateX(0px) translateY(400px);
+        }
+    
+        100% {
+            transform: translateY(0px);
+        }
+
+        
+        
+    }
+
+    div{
+        background: pink;
+        width: 100px;
+        height: 100px;
+        animation-name: -solveRow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+
+    </style>
+</head>
+<body>
+    
+    <div>hello</div>
+
+</body>
+</html>
