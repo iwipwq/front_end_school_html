@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        
+        body{
+            background-color: #d4dbe7;
+        }
+        /* #dbe2e9; */
+        .btn{
+            margin: 100px;
+            padding-top: 0;
+            
+            width: 150px;
+            height: 150px;
+            border-radius: 50px;
+            border: 1px solid rgb(99, 105, 122, .2);
+            background: linear-gradient(145deg, #dbe2e9, #dbe2e9);
+            box-shadow:  20px 20px 60px rgba(255,255,255,0),
+                        -20px -20px 60px rgba(255,255,255,0);
+            text-align: center;
+            line-height: 140px;
+            font-size: 20pt;
+            color: rgb(99, 105, 122);
+            font-weight: bold;
+            transform-origin: center,center;
+            transition: all .2s cubic-bezier(0.66, 0.04, 1, 1);
+            }
+            /* cubic-bezier(0.66, 0.04, 1, 1) */
+            
+        .btn::after{
+            content: '🤪';
+            
+        }
+
+        .btn:hover{
+            /* background: linear-gradient(145deg, #acb2be, #f0f0f0); */
+            box-shadow:  20px 20px 60px #acb2be,
+                        -20px -20px 60px #ffffff;
+            border: 1px solid rgb(99, 105, 122, 0); 
+            font-size: 42pt;
+            width: 180px;
+            height: 180px;
+            border-radius: 50px;  
+            transform-origin: center,center;         
+            transition: all .2s cubic-bezier(0.66, 0.04, 1, 1);;            
+        }
+
+        .btn:hover::before{
+            position: absolute;
+            float: left;
+            
+            content: '😍';
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="btn"></div>
+
+
+</body>
+</html>
