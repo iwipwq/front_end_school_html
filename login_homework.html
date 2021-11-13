@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wenive login</title>
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'> -->
+    
+    <style>
+        
+        .modalWrap {
+            position: relative;
+            /* width: 520px;
+            height: 712px; */
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid #c4c4c4;
+            box-sizing: border-box;
+        }
+
+        .loginOrSignUp {
+            /* overflow: hidden; */
+            /* display: flex;
+            flex-direction: row;
+            justify-content: space-between; */
+            padding: 24px 24px;
+            border-bottom: 1px solid #C4C4C4;
+        }
+
+        .loginOrSignUpTitle {
+            /* display: inline-block; */
+            
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #000;
+            text-align: center;
+
+        }
+        
+        .closeModal {
+            transform: translateY(-110%);
+            float: right;
+        }
+
+        .mainForm {
+            padding: 0 24px;
+        }
+
+        .desc {
+            margin-top: 26px;
+            margin-bottom: 24px;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #000;
+        }
+
+        .mainForm .idForm{
+            margin-bottom: 10px;
+        }
+
+        .mainForm .pwForm{
+            margin-bottom: 16px;
+        }
+
+        .mainForm form .textForm {
+            padding: 15px 16px;
+            border: 1px solid #C4C4C4;
+            border-radius: 5px;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20.03px;
+            color: #767676;
+            width: 100%;
+            box-sizing: border-box;
+        }
+            
+        
+        /* hide label description */
+        .mainForm form section .blind {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        /* checkbox styling*/
+        .checkboxSection {
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .checkboxSection input[type=checkbox] {
+            display: none;
+        }
+
+        .checkboxSection input[type=checkbox] + .checkIcon {
+            float: left;
+            background-image: url(loginImg/check-box.png) ;
+            height: 22px;
+            width: 22px;
+            padding: 0 0 0 0px;
+        }
+            
+            
+
+        .checkboxSection input[type=checkbox]:checked + .checkIcon {
+            float: left;
+            background-image: url(loginImg/check-box-checked.png);
+            height: 22px;
+            width: 22px;
+            padding: 0 0 0 0px;
+        }
+            
+
+        .checkboxSection .checkIcon + label {
+            margin-left: 8px;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: #767676;
+        }
+        
+        .mainForm .loginButton{
+            margin-bottom: 20px;
+            padding: 14px; /*211px*/
+            background-color: #2F80ED;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #ffffff;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .mainForm .recoverSection {
+            /* display: flex; */
+            text-align: center;
+            margin-bottom: 30px;
+            
+        }
+
+        .mainForm .recoverSection a{
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #767676;
+            text-decoration: none;
+        }
+
+        .mainForm .recoverSection a:first-child::after{
+            padding: 0 12px;
+            content: '|';
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #767676;
+        }
+
+        /* hr {
+            border: none;
+            border-top: 1px solid #c4c4c4;
+            color: #333;
+            overflow: visible;
+            text-align: center;
+            
+        }
+        
+        hr::after {
+            position: relative;
+            top: -9px;
+            padding: 0 13px;
+            content: '또는';
+            background-color: #ffffff;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #767676;
+        } */
+
+        
+        
+        .mainForm .loginWithAnother{
+            padding-bottom: 25px;
+        }
+
+        .wrapOr{
+            margin-bottom: 20px;
+            width: 100%;
+            height: 18px;
+            text-align: center;
+            position: relative;
+            
+        }
+        
+        .wrapOr::after{
+            content: '';
+            width: 100%;
+            border-bottom: 1px solid #c4c4c4;
+            position: absolute;
+            left:0;
+            top: 50%;
+            z-index: 1;
+            
+        }
+        
+        .mainForm .wrapOr p {
+            position: relative;
+            display: inline-block;
+            padding: 0 13px;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #767676;
+            text-align: center;
+            background-color: #fff;
+            z-index: 3;
+        }
+
+        /* .mainForm .wrapOr p::before{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: attr( data-initials );
+            background-color: #C4C4C4;
+            height: 1px;
+            
+            box-sizing: border-box;
+            
+            
+        }
+        
+        .mainForm .wrapOr p::after{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: attr( data-initials );
+            background-color: #C4C4C4;
+            height: 1px;
+            
+            box-sizing: border-box;
+        } */
+
+        .loginOther {
+            margin-bottom: 10px;
+            display: block;
+            height: 28px;
+            padding: 11px 12px;
+            border: 1px solid;
+            border-radius: 5px;
+            font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 31px;
+            color: #767676;
+            text-align: center;
+            text-decoration: none;
+            
+        }
+
+        .loginOther:nth-child(1){
+            border-color: #767676;
+        }
+        .loginOther:nth-child(2){
+            border-color: #2D9CDB;
+        }
+        .loginOther:nth-child(3){
+            border-color: #00BF18;
+        }
+        .loginOther:nth-child(4){
+            border-color: #F2C94C;
+        }
+
+        .loginOther img{
+            overflow: clip;
+            display: flow-root;
+            position: absolute;
+            float: left;
+            
+        }
+            
+            
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <section class="modalWrap">
+        <header class="loginOrSignUp">
+            <h1 class="loginOrSignUpTitle">로그인 또는 회원가입</h1> 
+            <img class="closeModal" src="loginImg/close.png" alt=" 닫기 버튼. 클릭하시면 로그인 또는 회원가입 창을 닫습니다.">
+            
+        </header>
+
+        <main class="mainForm">
+            
+            <h2 class="desc">위니브에서 여러분의 궁금증을 해결하세요!</h2>
+            <form action="#.html" method="post">
+                
+                    <section class="idForm">
+                        <label class="blind" for="name">아이디를 입력하세요</label>
+                        <input class="textForm" type="text" id="name" name="userName" placeholder="아이디">
+                    </section>
+                
+                
+                    <section class="pwForm">
+                        <label class="blind" for="pwd">비밀번호를 입력하세요</label>
+                        <input class="textForm" type="text" id="pwd" name="userPwd" placeholder="비밀번호">
+                    </section>
+                        
+                    <section class="checkboxSection">
+                        <input type="checkbox" id="loginAlways" name="loginAlways">
+                        <label class="checkIcon" for="loginAlways"></label>
+                        <label for="loginAlways" draggable="false">로그인 상태 유지</label>
+                    </section>
+
+                <button class="loginButton">로그인</button>
+                <section class="recoverSection">
+                    <a href="#">회원가입</a><a href="#">아이디/비밀번호 찾기</a>
+                </section>
+                <div class="wrapOr"><p>또는</p></div>
+                <section class="loginWithAnother">
+                    
+                    <a class="loginOther" href="#"><img src="loginImg/Google__G__Logo 1.png" alt="">구글 계정으로 로그인</a>
+                    <a class="loginOther" href="#"><img src="loginImg/facebook.png" alt="">페이스북 계정으로 로그인</a>
+                    <a class="loginOther" href="#"><img src="loginImg/naver-logo.png" alt="">네이버 계정으로 로그인</a>
+                    <a class="loginOther" href="#"><img src="loginImg/message-circle.png" alt="">카카오톡 계정으로 로그인</a>
+                </section>
+            
+            </form>
+                
+            
+            
+                
+            
+            
+                
+                    
+                    
+
+
+        </main>
+    </section>
+</body>
+</html>

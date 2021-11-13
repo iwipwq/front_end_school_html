@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skip link</title>
+
+    <style>
+
+        #skip a {
+            padding: 20px;
+            background-color: black;
+            position:absolute;
+            left:-10000px;
+            top:auto;
+            width:1px;
+            height:1px;
+            overflow:hidden;
+            color: #fff;
+        }
+        
+        .loremipsumdolor{
+            padding: 0 20px;
+            display: inline-block;
+            background-color: black;
+            color: white;
+            width: 1000px;
+        }
+
+        #skip a:focus{
+            position:static;
+            width:auto;
+            height:auto;
+        }
+
+        #content {
+            padding: 50px 20px;
+            width: 1000px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #local {
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            width: 1000px;
+            height: 1000px;
+            background-color: azure;
+        }
+        
+        #local img{
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="skip"><a href="#content">콘텐츠로 바로 갑시다</a></div>
+    <h1 class="loremipsumdolor"> Title : Lorem, ipsum 💸dollar. 💩Shit.</h1>
+    <div id="local">
+        <h2>부제: 나스닥은 신인가?</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit voluptatum dolores voluptas fugiat facilis ut perferendis obcaecati accusamus fuga ea non quaerat porro quasi sequi quod, quas officia nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit voluptatum dolores voluptas fugiat facilis ut perferendis obcaecati accusamus fuga ea non quaerat porro quasi sequi quod, quas officia nesciunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit voluptatum dolores voluptas fugiat facilis ut perferendis obcaecati accusamus fuga ea non quaerat porro quasi sequi quod, quas officia nesciunt.
+        </p>
+        <img src="sharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg" alt="">
+    </div>
+    <div id="content">
+        <h2>😎콘텐츠 내용😎</h2>
+        <p>나스닥은 신이고</p>
+        <p>나는 무적이다</p>
+        <p>🤑</p>
+    </div>
+    <div id="local"></div>
+
+
+
+</body>
+</html>

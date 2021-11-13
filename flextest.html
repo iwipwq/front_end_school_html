@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flextest</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+
+
+        .one{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            padding: 20px 20px;
+            background-color: rgb(134, 134, 255);
+            border: 1px solid black;
+        }
+
+        .two{
+            /* display: inline-block; */
+            
+            width: 100%;
+            height: 200px;
+            
+            background-color: blueviolet;
+            
+        }
+
+        .three{
+            /* display: inline-block; */
+            /* position: absolute; */
+            
+            width: 100%;
+            height: 200px;
+            /* float: right; */
+            background-color:rgb(168, 117, 117);
+        }
+
+        .four{
+            width: 50%;
+            height: 200px;
+        }
+        
+        
+        .box1{
+            /* display: flex;
+            justify-content: space-between; */
+            position: relative;
+            text-align: center;
+            
+            overflow: clip;
+            padding: 20px 20px;
+            background-color: rgb(134, 134, 255);
+            border: 1px solid black;
+        }
+
+        .box2{
+            /* display: inline-block; */
+            
+            width: 100%;
+            height: 200px;
+            
+            background-color: blueviolet;
+            
+        }
+
+        .box3{
+            /* display: inline-block; */
+            /* position: absolute; */
+            
+            width: 100%;
+            height: 200px;
+            /* float: right; */
+            background-color:rgb(168, 117, 117);
+        }
+
+        .box4{
+            width: 50%;
+            height: 200px;
+        }
+    
+    </style>
+
+
+</head>
+<body>
+    <div class="one">
+        <div class="two">ddddddd</div>
+        <p class="four">중앙</p>
+        <div class="three"></div>
+        
+    </div>
+    
+    <div class="box1">
+        <div class="box2">ddddddd</div>
+        <p class="box3">중앙</p>
+        <div class="box4">bbbbbbb</div>
+        
+    </div>
+</body>
+</html>
