@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Homework</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-menu h1{
+            font-family: 'Praise', cursive;
+            color: rgb(37, 37, 37);
+            font-size: 48px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .nav-menu ul {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid salmon;
+        }
+
+        .nav-menu ul li{
+            font-family: 'Source Sans Pro', sans-serif;
+            color: rgb(37, 37, 37);
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .main {
+            display: flex;
+            flex: 1, 2;
+        }   
+
+        .main .main-section {
+            display: flex;
+            background-color: wheat;
+        }
+
+        .main .main-section article {
+            padding: 20px 20px;
+
+        }
+
+        .main .side-bar{
+
+        }
+    </style>
+
+</head>
+<body>
+    <main-wrapper>
+        <header>
+            <nav class="nav-menu">
+                <h1>The quick brown fox</h1>
+                <ul>
+                    
+                    <li class="nav-list">About</li>
+                    <li class="nav-list">Portfolio</li>
+                    <li class="nav-list">Contact</li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="main-section">
+                <article>
+                    
+                </article>
+                <article>
+
+                </article>
+                <article>
+
+                </article>
+            </section>
+            <aside class="side-bar">
+
+            </aside>
+        </main>
+        <footer>
+
+        </footer>
+    </main-wrapper>
+</body>
+</html>
