@@ -1,0 +1,129 @@
+.app {
+    background-color: #EAE8FE;
+}
+
+.tit-app {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 386px 180px;
+    width: 386px;
+    height: 180px;
+    
+}
+
+.vending-machine {
+    padding: 28px 27px 31px;
+    width: 360px;
+    height: 545px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.tit-app.ir {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    margin: -1px;
+}
+
+.vending-machine .list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+.vending-machine .list-item li {
+    padding-bottom: 12px;
+}
+
+.vending-machine .list-item .btn-item {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94px;
+    height: 130px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+}
+
+.vending-machine .list-item .btn-item .img-item {
+    box-sizing: border-box;
+    width: 36px;
+    /* height: 65px; */
+    padding-top: 11px;
+    padding-bottom: 6px;
+}
+
+.tit-item {
+    padding-bottom: 7px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    text-align: center;
+    color: #333333;
+}
+
+.txt-item {
+    margin-bottom: 9px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+    text-align: center;
+    background-color: #6327FE;
+    color: #FFFFFF;
+}
+
+.cont-return {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-return .info-balance {
+    flex: 2;
+    display: flow-root;
+    overflow: clip;
+    border-radius: 5px;
+    background: #EAE8FE;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+    color: #000000;
+}
+
+
+
+
+
+.cont-return .info-balance .txt-balance {
+    float: right;
+}
+
+.cont-return .btn-return{
+    flex: 1;
+}
+
+.cont-put {
+
+}
+
+.cont-put .inp-put {
+
+}
+

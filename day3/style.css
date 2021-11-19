@@ -1,0 +1,80 @@
+@keyframes object-rotate {
+    0% {
+        transform: rotateY(0deg);
+        
+    }
+    100% {
+        /* turn이라는 단위는 정확히 한 바퀴를 돌리라는 의미 */
+        transform: rotateY(1turn);
+        
+    }
+}
+@keyframes scene-rotate {
+    0% {
+        transform: rotateX(0deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(1turn) rotateZ(1turn);
+    }
+}
+
+@keyframes object-scale {
+    0% {
+        transform: rotateZ(0deg) rotateX(0deg);
+        border: 0px solid salmon;
+        
+    }
+    50% {
+        
+        border: 500px solid salmon;
+        transform: rotateZ(60deg) rotateX(50deg);
+    }
+    100% {
+        border: 0px solid salmon;
+        transform: rotateZ(0deg) rotateX(0deg);
+    }
+
+    }
+
+body {
+    width: 100vw;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    transform-style: preserve-3d;
+    /* 나중에 회전 */
+    /* transform: rotateX(); */
+    transform: rotateX(10deg);
+    animation: scene-rotate 5s linear infinite alternate;
+}
+
+.circle {
+    
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: bold;
+    /* 나중에 작성 */
+    animation: object-rotate 5s linear infinite;
+    animation: object-scale 5s linear infinite;
+
+    transform-style: preserve-3d;
+}
+.circle .word {
+    transform-style: preserve-3d;
+}
+.circle span {
+    position: absolute;
+    transform: rotateY(calc(var(--char-index)*12deg)) translateZ(500px);
+}
