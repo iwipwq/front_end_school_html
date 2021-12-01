@@ -1,0 +1,511 @@
+let x = 10;
+undefined
+if (x < 100) {
+    console.log('100보다 작아요!')
+}
+VM10708:2 100보다 작아요!
+undefined
+// Number와 ParsInt 어떤게 실무에서 더?
+undefined
+let value = new Number(100);
+undefined
+value
+Number {100}[[Prototype]]: Number[[PrimitiveValue]]: 100
+value = 100
+100
+// 조건문과 반복문
+undefined
+//원래 용도에 맞는 parsInt를 쓰는게 좋다
+undefined
+//조건문과 반복문
+undefined
+if (x < 100) {
+    console.log('100보다 작아요!')
+}
+VM11389:2 100보다 작아요!
+undefined
+if (x > 100){
+    console.log('100보다 커요')
+}
+undefined
+//x>100이 true여야 결과값을 출력함
+undefined
+//if문은 여러개 중첩하여 쓸 수 있다.
+undefined
+if (x < 100){
+    console.log('100보다 작아요!'_
+VM11844:2 Uncaught SyntaxError: missing ) after argument list
+if (x < 100){
+    console.log('100보다 작아요!')
+    if (x > 5){
+        console.log('5보다 커요!')
+    }
+}
+VM12042:2 100보다 작아요!
+VM12042:4 5보다 커요!
+undefined
+if (x < 100){
+    console.log('100보다 작아요!')
+}
+if (x > 5){
+        console.log('5보다 커요!')
+    }
+VM12059:2 100보다 작아요!
+VM12059:5 5보다 커요!
+undefined
+if (true) {
+    console.log(1)
+}
+if (true) {
+    console.log(2)
+}
+VM12325:2 1
+VM12325:5 2
+undefined
+if (false) {
+    console.log(1)
+}
+if (true) {
+    console.log(2)
+}
+VM12346:5 2
+undefined
+if (false) {
+    console.log(1)
+    if (true) {
+    console.log(2)
+}
+}
+if (true) {
+    console.log(2)
+}
+VM12346:5 2
+VM12364:10 Uncaught SyntaxError: Unexpected number
+if (false) {
+    console.log(1)
+    if (true) {
+    console.log(2)
+}
+}
+undefined
+if (true) {
+console.log(1)
+    { else 
+VM12486:3 Uncaught SyntaxError: Unexpected token 'else'
+if (true) {
+console.log(1)
+} else {
+console.log(2)
+    { 
+VM12527:5 Uncaught SyntaxError: Unexpected end of input
+if (true) {
+console.log(1)
+} else {
+console.log(2)
+}
+VM12539:2 1
+undefined
+if (true) {
+console. log(1)
+} else if(true) {
+    console. log(2)}
+else if(true) {
+console.log(3);}
+if (true) {
+console.log(4);
+}
+
+VM12954:2 1
+VM12954:8 4
+undefined
+if (true) {
+console. log(1)
+} else if(true) {
+    console. log(2)}
+else if(true) {
+console.log(3);}
+if (true) {
+console.log(4);
+}
+if (false) {
+console.log(5);
+} else if(true) {
+console.log(6);
+} else if(fale) {
+console.log(7);
+} else {
+console.log(99);
+
+VM13247:18 Uncaught SyntaxError: Unexpected end of input
+if (true) {
+console. log(1)
+} else if(true) {
+    console. log(2)}
+else if(true) {
+console.log(3);}
+if (true) {
+console.log(4);
+}
+if (false) {
+console.log(5);
+} else if(true) {
+console.log(6);
+} else if(fale) {
+console.log(7);
+} else {
+console.log(99);
+}
+VM13259:2 1
+VM13259:8 4
+VM13259:13 6
+undefined
+let score = 89;
+let money = 100000;
+
+if (swcore >= 90) {
+   console.log('mom : i'm so hjappy')
+               }
+VM13512:5 Uncaught SyntaxError: missing ) after argument list
+let score = 89;
+let money = 100000;
+
+if (swcore >= 90) {
+   console.log('mom : i\'m so hjappy')
+               }
+VM13516:4 Uncaught ReferenceError: swcore is not defined
+    at <anonymous>:4:1
+(익명) @ VM13516:4
+let score = 89;
+let money = 100000;
+
+if (score >= 90) {
+   console.log('mom : i\'m so hjappy')
+               }
+undefined
+score
+89
+\t
+\n
+\\
+\'
+\"
+VM13546:1 Uncaught SyntaxError: Invalid or unexpected token
+let score = 89;
+let money = 100000;
+
+if (score >= 90) {
+   console.log('mom : i\'m so happy');
+   money += 1000000;
+}
+if (score>=80){
+console.log('mom : i\'m so happy~');
+money += 100000;
+}
+if (score >= 70){
+console.log('mom : i\'m happy.');
+money += 10000;
+}
+if (score >= 60){
+console.log('mom : happy?');
+money += 10000;
+}
+if (score <60){
+console.log('...');
+}
+
+
+VM14399:9 mom : i'm so happy~
+VM14399:13 mom : i'm happy.
+VM14399:17 mom : happy?
+undefined
+let score = 89;
+let money = 100000;
+
+if (score >= 90) {
+   console.log('mom : i\'m so happy');
+   money += 1000000;
+}
+if (score>=80){
+console.log('mom : i\'m so happy~');
+money += 100000;
+}
+if (score >= 70){
+console.log('mom : i\'m happy.');
+money += 10000;
+}
+if (score >= 60){
+console.log('mom : happy?');
+money += 10000;
+}
+if (score <60){
+console.log('...');
+}
+console.log(money);
+
+VM14447:9 mom : i'm so happy~
+VM14447:13 mom : i'm happy.
+VM14447:17 mom : happy?
+VM14447:23 220000
+undefined
+if (score >= 90) {
+    console.log('mom: i\'m so happy!')
+    money += 1000000
+} else if (score >= 80) {
+    console.log('mom: i\'m happy!')
+    money += 100000
+} else if (score >= 70){
+    console.log('mom : i\'m happy');
+    money += 10000;
+}else if (score >= 60){
+    console.log('mom : happy?');
+    money += 10000;
+} else {
+    console.log('...');
+}
+VM14453:5 mom: i'm happy!
+320000
+if (score >= 90) {
+    console.log('mom: i\'m so happy!')
+    money += 1000000
+} else if (score >= 80) {
+    console.log('mom: i\'m happy!')
+    money += 100000
+} else if (score >= 70){
+    console.log('mom : i\'m happy');
+    money += 10000;
+}else if (score >= 60){
+    console.log('mom : happy?');
+    money += 10000;
+} else {
+    console.log('...');
+}
+VM14461:5 mom: i'm happy!
+420000
+if (score >= 90) {
+    console.log('mom: i\'m so happy!')
+    money += 1000000
+} else if (score >= 80) {
+    console.log('mom: i\'m happy!')
+    money += 100000
+} else if (score >= 70){
+    console.log('mom : i\'m happy');
+    money += 10000;
+}else if (score >= 60){
+    console.log('mom : happy?');
+    money += 10000;
+} else {
+    console.log('...');
+}
+VM14464:5 mom: i'm happy!
+520000
+new Date()
+Mon Nov 29 2021 16:14:10 GMT+0900 (한국 표준시)
+new Date().getDay
+ƒ getDay() { [native code] }
+new Date().getDay()
+1
+new Date().getDate()
+29
+switch(1){
+    case 0:
+console log('일요일!!');
+ case 1:
+console log('월요일!!');
+ case 2:
+console log('화요일!!');
+ case 3:
+console log('수요일!!');
+}
+VM14899:3 Uncaught SyntaxError: Unexpected identifier
+switch(1){
+    case 0:
+console.log('일요일!!');
+ case 1:
+console.log('월요일!!');
+ case 2:
+console.log('화요일!!');
+ case 3:
+console.log('수요일!!');
+}
+VM14915:5 월요일!!
+VM14915:7 화요일!!
+VM14915:9 수요일!!
+undefined
+switch(1){
+    case 0:
+console.log('일요일!!');
+break;
+ case 1:
+console.log('월요일!!');
+ case 2:
+console.log('화요일!!');
+ case 3:
+console.log('수요일!!');
+}
+VM14982:6 월요일!!
+VM14982:8 화요일!!
+VM14982:10 수요일!!
+undefined
+switch(1){
+    case 0:
+console.log('일요일!!');
+break;
+ case 1:
+console.log('월요일!!');
+break;
+ case 2:
+console.log('화요일!!');
+break;
+ case 3:
+console.log('수요일!!');
+break;
+}
+VM15014:6 월요일!!
+undefined
+switch(new Date().getDay()){
+    case 0:
+console.log('일요일!!');
+break;
+ case 1:
+console.log('월요일!!');
+break;
+ case 2:
+console.log('화요일!!');
+break;
+ case 3:
+console.log('수요일!!');
+break;
+}
+VM15123:6 월요일!!
+undefined
+switch(new Date().getDay()){
+    case 0:
+console.log('일요일!!');
+break;
+ case 1:
+console.log('월요일!!');
+break;
+ case 2:
+console.log('화요일!!');
+break;
+ case 3:
+console.log('수요일!!');
+break;
+    default:
+console.log('요일없음');
+break;
+}
+VM15191:6 월요일!!
+undefined
+swicth 10
+VM15211:1 Uncaught SyntaxError: Unexpected number
+switch(10){
+    case 0:
+console.log('일요일!!');
+break;
+ case 1:
+console.log('월요일!!');
+break;
+ case 2:
+console.log('화요일!!');
+break;
+ case 3:
+console.log('수요일!!');
+break;
+    default:
+console.log('요일없음');
+break;
+}
+VM15390:15 요일없음
+undefined
+let cars = ["BMW", "Volvo", "Saab", "Ford", "Flat", "Audi"];
+undefined
+cars
+(6) ['BMW', 'Volvo', 'Saab', 'Ford', 'Flat', 'Audi']0: "BMW"1: "Volvo"2: "Saab"3: "Ford"4: "Flat"5: "Audi"length: 6[[Prototype]]: Array(0)
+ cars [0]
+'BMW'
+cars[-1]
+undefined
+for (let i = 0; i < cars.length; i++){
+console.log(i);
+}
+VM15604:2 0
+VM15604:2 1
+VM15604:2 2
+VM15604:2 3
+VM15604:2 4
+VM15604:2 5
+undefined
+cars.length
+6
+for (let i = 0; i < cars.length; i += 2) {
+console.log(i);
+}
+VM15797:2 0
+VM15797:2 2
+VM15797:2 4
+undefined
+for (let i = 3; i < cars.length; i += 2) {
+console.log(i);
+}
+VM15828:2 3
+VM15828:2 5
+undefined
+for (let i = 0; i < cars.length; i++){
+//console.Log(i);
+console.log(cars[i]);
+}
+VM16094:3 BMW
+VM16094:3 Volvo
+VM16094:3 Saab
+VM16094:3 Ford
+VM16094:3 Flat
+VM16094:3 Audi
+undefined
+fot (let i = 0; i <100 i++){
+console.log(i);}
+VM16328:1 Uncaught SyntaxError: missing ) after argument list
+fot (let i = 0; i <100 i++){
+console.log([i]);}
+VM16344:1 Uncaught SyntaxError: missing ) after argument list
+fot (let i = 0; i <100 i++)
+VM16388:1 Uncaught SyntaxError: missing ) after argument list
+fot (let i = 0; i <100 i++){
+console.log(abc[i]);}
+VM16422:1 Uncaught SyntaxError: missing ) after argument list
+for (let i = 0; i < 100 i++) {
+console.log(i);
+VM16539:1 Uncaught SyntaxError: Unexpected identifier
+for (let i = 0; i < 100 i++) {
+console.log(i);
+}
+VM16549:1 Uncaught SyntaxError: Unexpected identifier
+let result = 0;
+for (let i = 0; i < 101; i++){
+result += i;
+//console.log(i);
+}
+console.log(result);
+VM16827:6 5050
+undefined
+let result = 0;
+for (let i = 0; i < 101; 2i+1){
+result += i;
+}
+console.log(result);
+VM17123:2 Uncaught SyntaxError: Invalid or unexpected token
+let result = 0;
+for (let i = 0; i < 101; 2*i+1){
+result += i;
+}
+console.log(result);
+let result = 0;
+for (let i = 0; i < 101; 2i+1){
+result += i;
+}
+console.log(result);
+let result = 0;
+for (let i = 0; i < 101; i +=2){
+result += 1;
+}
+console.log(result);

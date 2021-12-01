@@ -1,0 +1,417 @@
+undefined
+undefined
+window.console.log('hello world')
+VM430:1 hello world
+undefined
+document.write('hello world')
+undefined
+documnet.getElemntById('one').innerHTML = 'h1'
+VM766:1 Uncaught ReferenceError: documnet is not defined
+    at <anonymous>:1:1
+(익명) @ VM766:1
+document.getElementById('one'
+VM832:1 Uncaught SyntaxError: missing ) after argument list
+document.getElementById('one').innerHTML = 'h1'
+VM917:1 Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+    at <anonymous>:1:42
+(익명) @ VM917:1
+document.getElementById('one').innerHTML
+VM1198:1 Uncaught TypeError: Cannot read properties of null (reading 'innerHTML')
+    at <anonymous>:1:31
+(익명) @ VM1198:1
+document.getElementById('one').innerHTML = 'h1'
+VM1345:1 Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+    at <anonymous>:1:42
+(익명) @ VM1345:1
+window alert
+VM1372:1 Uncaught SyntaxError: Unexpected identifier
+window.alert('hello world')
+undefined
+console.dir(document)
+VM1522:1 #document
+undefined
+//접근방법
+undefined
+window.console.log
+ƒ log() { [native code] }
+console.error('helle')
+VM1803:1 helle
+(익명) @ VM1803:1
+undefined
+0b100
+4
+0o100
+64
+0x100
+256
+0b1000
+8
+let k = {
+	'a':'aa',
+    'b':'bb',
+    'c':'cc',
+    'd':'dd',
+    }
+undefined
+k
+{a: 'aa', b: 'bb', c: 'cc', d: 'dd'}
+function add(x, y) {
+    return x + y 
+}
+undefined
+k.c = 'cc'
+'cc'
+k.e = 'ee'
+'ee'
+k.e
+'ee'
+add.a = 100
+100
+add. a
+100
+add
+ƒ add(x, y) {
+    return x + y 
+}
+0.1 + 0.2
+0.30000000000000004
+0.1
+0.1
+0.1 + 0.1
+0.2
+0.1 * 0.1
+0.010000000000000002
+0.1 * 3
+0.30000000000000004
+0.3 + 0.6
+0.8999999999999999
+99999999999999999999+3
+100000000000000000000
+99999999999999999999n+3n
+100000000000000000002n
+parseInt(10, 10)
+10
+parseInt(10, 2)
+2
+parseInt(10, 8)
+8
+parseInt(10, 16)
+16
+let n = 10000
+undefined
+n.toFixed(4)
+'10000.0000'
+n.toFixed(5)
+'10000.00000'
+(0.1 * 3).toFixed(2)
+'0.30'
+Math.random()
+0.41163698086387535
+Math.random()
+0.3716644186985678
+Math.random()*10
+6.826947445540745
+let a = 10;
+let b = 3;
+undefined
+console.log(a + b);
+console.log(a - b);
+console.log(a / b);
+console.log(a * b);
+console.log(a ** b);
+console.log(a % b);
+VM4274:1 13
+VM4274:2 7
+VM4274:3 3.3333333333333335
+VM4274:4 30
+VM4274:5 1000
+VM4274:6 1
+undefined
+console.log(9 % 9);
+VM4364:1 0
+undefined
+console.log(9 % 10);
+VM4442:1 9
+undefined
+++a
+11
+++a
+12
+a++
+12
+a
+13
+--a
+12
+a--
+12
+--a
+10
+a--
+10
+a--
+9
+a
+8
+a
+8
+b
+3
+a = a+b
+11
+//연산자우선순위
+undefined
+a +=b //a = a+b
+14
+a /=b // a = a + b
+4.666666666666667
+a == b
+a === b
+a > b
+a >= b
+a < b
+a <= b
+a != b
+true
+console.log a == b
+console.log a === b
+console.log a > b
+console.log a >= b
+console.log a < b
+console.log a <= b
+console.log a != b
+VM4893:1 Uncaught SyntaxError: Unexpected identifier
+console.log (a == b)
+console.log a === b
+console.log (a > b)
+console.log (a >= b)
+console.log (a < b)
+console.log (a <= b)
+console.log (a != b)
+VM4935:2 Uncaught SyntaxError: Unexpected identifier
+console.log(a == b)
+console.loga === b
+console.log (a > b)
+console.log(a >= b)
+console.log(a < b)
+console.log(a <= b)
+console.log(a != b)
+VM4958:1 false
+VM4958:3 true
+VM4958:4 true
+VM4958:5 false
+VM4958:6 false
+VM4958:7 true
+undefined
+a = 10
+10
+b = '10'
+'10'
+a == b
+true
+a === b
+false
+typeof a
+'number'
+typeof b
+'string'
+String(a)
+'10'
+String(a) === b
+true
+a
+10
+a = String(a)
+'10'
+let result= 0;
+undefined
+for (let x = 0; x<101; x++){
+}
+undefined
+false || true
+true
+ture && false
+VM5617:1 Uncaught ReferenceError: ture is not defined
+    at <anonymous>:1:1
+(익명) @ VM5617:1
+true && false
+false
+!true
+false
+!((true && false) || (true && false))
+true
+let x = 10
+undefined
+!((x % 5 == 0 && x % 2 == 0) || (x / 2 == 5 && false))
+false
+let y = 10
+undefined
+(false && y % 2 == 0) && (y / 2 == 5 && false)
+false
+let z =3
+undefined
+true && z % 3 == 0) || (z / 2!== 5 && false)//!==는 잘못된 문법입니다.
+VM6346:1 Uncaught SyntaxError: Unexpected token ')'
+true && z % 3 == 0) || (z / 2 !== 5 && false)//!==는 잘못된 문법입니다.
+VM6352:1 Uncaught SyntaxError: Unexpected token ')'
+true && z % 3 == 0) || (z / 2 !=!= 5 && false)//!==는 잘못된 문법입니다.
+VM6536:1 Uncaught SyntaxError: Unexpected token ')'
+//드모르간 법칙
+undefined
+let accessAllowed = (age > 18) ? true : false;
+VM6708:1 Uncaught ReferenceError: age is not defined
+    at <anonymous>:1:21
+(익명) @ VM6708:1
+let age 10
+VM6760:1 Uncaught SyntaxError: Unexpected number
+let age = 10
+undefined
+let accessAllowed = (age > 18) ? true : false;
+undefined
+accessAllowed
+false
+let job = true;
+undefined
+job && '완료' || '미완료'
+'완료'
+job  = false;
+false
+job && '완료' || '미완료'
+'미완료'
+!(x || y) === (!x && y!)
+VM7050:1 Uncaught SyntaxError: Unexpected token '!'
+!(x || y) === (!x && !y)
+true
+//드모르간법칙
+undefined
+!(x && y) === (!x || !y)
+true
+typeof 5
+'number'
+typeof (5)
+'number'
+typeof ('5')
+'string'
+typeof ('"5"')
+'string'
+typeof ("5")
+'string'
+let value = 10;
+undefined
+value%2 == 0? console.log(1) : console.log(2)
+VM7583:1 1
+undefined
+Boolean('나')
+true
+Boolean('')
+false
+Boolean(1)
+true
+Boolean(0)
+false
+Boolean(' ')
+true
+Boolean(-1)
+true
+Boolean('true')
+true
+Boolean('false')
+true
+typeof '5'
+'string'
+typeof 5
+'number'
+typeof true
+'boolean'
+string(5)
+VM8273:1 Uncaught ReferenceError: string is not defined
+    at <anonymous>:1:1
+(익명) @ VM8273:1
+String(5)
+'5'
+Number(true)
+1
+Number(false)
+0
+Number('5')
+5
+typeof([1,2,3,4])
+'object'
+typeof({'one':'하나','two':'둘'})
+'object'
+typeof('1' +1)
+'string'
+'1' + 1
+'11'
+1 + '1'
+'11'
+'11' - 1
+10
+//헷갈리는 형변환
+undefined
+Boolean([])
+true
+Boolean({})
+true
+String(123)
+'123'
+123.toString()
+VM8914:1 Uncaught SyntaxError: Invalid or unexpected token
+let x = 10
+undefined
+x.toString()
+'10'
+//Case마다 다르다(절대로 사용하지 않는다는 법칙이 없다)
+undefined
+123 + ''
+'123'
+!!true
+true
+!!'abc'
+true
+!!''
+false
+!!1
+true
+!!0
+false
+!!undefined
+false
+!!NaN
+false
+!true
+false
+!(!true)
+true
+'0' == 0
+true
+0 == ''
+true
+0 == '0'
+true
+false == 'false'
+false
+false =='0'
+true
+false == null
+false
+false == undefined
+false
+false == NaN
+false
+!!null
+false
+!!undefined
+false
+!!NaN
+false
+Boolean('false')
+true
+false === 0
+false
+false == 0
+true
+false == '0'
+true
+'false'
+'false'

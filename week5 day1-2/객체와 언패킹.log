@@ -1,0 +1,122 @@
+let person = {
+  //key: value
+  name: '이호준',
+  age: 10,
+  height : 30,
+  weight : 40,
+  이력 : {'첫번째직장' : '하나', '두번째직장' : '둘'}
+}
+undefined
+person
+{name: '이호준', age: 10, height: 30, weight: 40, 이력: {…}}age: 10height: 30name: "이호준"weight: 40이력: {첫번째직장: '하나', 두번째직장: '둘'}두번째직장: "둘"첫번째직장: "하나"[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()[[Prototype]]: Object
+person.name
+'이호준'
+person['name']
+'이호준'
+person.'name'
+VM620:1 Uncaught SyntaxError: Unexpected string
+person[name]
+undefined
+//error가 나는 경우와 error 가 나지 않는 경우를 구별해주세요
+undefined
+person[0][0]
+VM1021:1 Uncaught TypeError: Cannot read properties of undefined (reading '0')
+    at <anonymous>:1:10
+(익명) @ VM1021:1
+person.이력.첫번째직장
+'하나'
+person['이력'].첫번째직장
+'하나'
+person.10
+VM1232:1 Uncaught SyntaxError: Unexpected number
+person[10]
+undefined
+person['10']
+undefined
+let person = {
+  //key: value
+  name: '이호준',
+  age: 10,
+  height : 30,
+  weight : 40,
+  이력 : {'첫번째직장' : '하나', '두번째직장' : '둘'},
+  10 : 100
+}
+undefined
+perosn
+VM1393:1 Uncaught ReferenceError: perosn is not defined
+    at <anonymous>:1:1
+(익명) @ VM1393:1
+person
+{10: 100, name: '이호준', age: 10, height: 30, weight: 40, 이력: {…}}10: 100age: 10height: 30name: "이호준"weight: 40이력: {첫번째직장: '하나', 두번째직장: '둘'}두번째직장: "둘"첫번째직장: "하나"[[Prototype]]: Object[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+person.valueOf()
+{10: 100, name: '이호준', age: 10, height: 30, weight: 40, 이력: {…}}
+Object.keys()
+VM1569:1 Uncaught TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at <anonymous>:1:8
+(익명) @ VM1569:1
+Object.keys(person)
+(6) ['10', 'name', 'age', 'height', 'weight', '이력']
+Object.values(person)
+(6) [100, '이호준', 10, 30, 40, {…}]
+Object.entries(person)
+(6) [Array(2), Array(2), Array(2), Array(2), Array(2), Array(2)]
+Object.keys(person)
+Object.values(person)
+Objcet.entries(person)
+VM1990:3 Uncaught ReferenceError: Objcet is not defined
+    at <anonymous>:3:1
+(익명) @ VM1990:3
+Object.keys(person)
+Object.values(person)
+Object.entries(person)
+(6) [Array(2), Array(2), Array(2), Array(2), Array(2), Array(2)]
+let data = Object.entries(person);
+undefined
+data[0]
+(2) ['10', 100]
+data[1]
+(2) ['name', '이호준']
+data[2]
+(2) ['age', 10]
+data[3]
+(2) ['height', 30]
+Object.keys()
+VM2239:1 Uncaught TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at <anonymous>:1:8
+(익명) @ VM2239:1
+Object.keys(person)
+(6) ['10', 'name', 'age', 'height', 'weight', '이력']
+data
+(6) [Array(2), Array(2), Array(2), Array(2), Array(2), Array(2)]
+//entries 키와 벨류 모두 뽑고싶을때
+undefined
+for (let i of data) {}
+console.log(i[0],i[1]);
+VM2523:2 Uncaught ReferenceError: i is not defined
+    at <anonymous>:2:13
+(익명) @ VM2523:2
+for (let [i, j] of Object.entries(person)){
+console.log(i,j);
+}
+VM2746:2 10 100
+VM2746:2 name 이호준
+VM2746:2 age 10
+VM2746:2 height 30
+VM2746:2 weight 40
+VM2746:2 이력 {첫번째직장: '하나', 두번째직장: '둘'}
+undefined
+for (let i, j] of [[1, 2], [3, 4]]){
+console.log(i,j);}
+VM2945:1 Uncaught SyntaxError: Unexpected token ']'
+for (let [i, j] of [[1, 2], [3, 4]]){
+console.log(i,j);}
+VM3081:2 1 2
+VM3081:2 3 4
+undefined
+for (let [[i, j], k] of [[[1,2],2],[[1,2],4]]
+     {
+console.log(i,j);}
+VM3273:2 Uncaught SyntaxError: Unexpected token '{'
