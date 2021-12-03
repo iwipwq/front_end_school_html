@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <ul>
+        <li id="first-item"></li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <script>
+        let item = document.getElementId('first-item');
+        console.log(item);
+        //아이템엔 li를 참조(들어가있게)된다
+        let item2 = document.getElementsByClassName('item-last');
+        console.log(item2);
+    </script>
+</body>
+</html>

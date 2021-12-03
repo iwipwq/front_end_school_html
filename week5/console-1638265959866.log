@@ -1,0 +1,87 @@
+var x = 1;
+
+if (x === 1) {
+  var x = 2;
+
+  console.log(x);
+  // expected output: 2
+}
+
+console.log(x);
+// expected output: 2
+
+VM635:6 2
+VM635:10 2
+undefined
+prompt('hello?')
+'hi'
+confirm('hi')
+true
+alert('hello')
+undefined
+let array = [5, 4, 10, 2, 5];
+let result = 0;
+console.log(s[10] + s[9] + s[8] + s[7] + s[6] + s[4] + s[3] + s[2] +s[1]
+VM2040:3 Uncaught SyntaxError: missing ) after argument list
+let array = [5, 4, 10, 2, 5];
+let result = 0;
+console.log(s[1])
+VM2189:3 Uncaught ReferenceError: s is not defined
+    at <anonymous>:3:13
+(익명) @ VM2189:3
+let s [5, 4, 10, 2, 5];
+console.log(s[1]+s[2]+s[3]+s[4]+s[5])
+VM2484:1 Uncaught SyntaxError: Unexpected token '['
+fuckyou
+VM2957:1 Uncaught ReferenceError: fuckyou is not defined
+    at <anonymous>:1:1
+(익명) @ VM2957:1
+s
+VM3022:1 Uncaught ReferenceError: s is not defined
+    at <anonymous>:1:1
+(익명) @ VM3022:1
+let s [5, 4, 10, 2, 5];
+console.log s[0];
+VM3211:1 Uncaught SyntaxError: Unexpected token '['
+let s [5, 4, 10, 2, 5];
+VM3270:1 Uncaught SyntaxError: Unexpected token '['
+let s = [5, 4, 10, 2, 5];
+console.log s[0]
+VM3441:2 Uncaught SyntaxError: Unexpected identifier
+console.log s;
+VM3532:1 Uncaught SyntaxError: Unexpected identifier
+console.log a
+VM3571:1 Uncaught SyntaxError: Unexpected identifier
+console.log(s)
+VM3632:1 Uncaught ReferenceError: s is not defined
+    at <anonymous>:1:13
+(익명) @ VM3632:1
+let s [5, 4, 10, 2, 5];
+console.log(s)
+VM3709:1 Uncaught SyntaxError: Unexpected token '['
+let s = [5, 4, 10, 2, 5];
+let s = new array(5)
+VM3848:2 Uncaught SyntaxError: Identifier 's' has already been declared
+s
+VM3865:1 Uncaught ReferenceError: s is not defined
+    at <anonymous>:1:1
+(익명) @ VM3865:1
+let s = [5, 4, 10, 2, 5];
+console.log(s)
+VM3978:2 (5) [5, 4, 10, 2, 5]0: 51: 42: 103: 24: 5length: 5[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()length: 1name: "push"arguments: (...)caller: (...)[[Prototype]]: ƒ ()[[Scopes]]: Scopes[0]reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {copyWithin: true, entries: true, fill: true, find: true, findIndex: true, …}[[Prototype]]: Object
+undefined
+console.log(s[1])
+VM4166:1 4
+undefined
+console.log(s[0]+s[1]+s[2]+s[3]+s[4]);
+VM4488:1 26
+undefined
+console.log(`s[0]+s[1]+s[2]+s[3]+s[4]`/`5`);
+VM4696:1 NaN
+undefined
+console.log(`(s[0]+s[1]+s[2]+s[3]+s[4])/5`);
+VM4790:1 (s[0]+s[1]+s[2]+s[3]+s[4])/5
+undefined
+console.log((s[0]+s[1]+s[2]+s[3]+s[4])/5);
+VM4814:1 5.2
+undefined

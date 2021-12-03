@@ -1,0 +1,5 @@
+let n
+
+function lotto(){
+
+}
