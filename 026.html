@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+         const userdb = [
+            {
+                "_id": "61b05e5a552f57bf3a9f20eb",
+                "id": "Henrietta",
+                "pw": "4ba0a6ae-da22-4fcf-be1f-d7ef8db0f101",
+                "index": 0,
+                "picture": "http://placehold.it/32x32",
+                "age": 31,
+                "eyeColor": "green",
+                "name": "Shelley Meyers",
+                "gender": "female",
+                "company": "ZILLAR",
+                "email": "shelleymeyers@zillar.com",
+                "phone": "+1 (934) 540-3768",
+                "address": "538 Mill Street, Juntura, New Jersey, 3529",
+                "grade": "관리자"
+            },
+            {
+                "_id": "61b05e5a1c8ec0642ae673b1",
+                "id": "Burt",
+                "pw": "c03e5e14-68e7-4b2e-907d-5ff198bb5d85",
+                "index": 1,
+                "picture": "http://placehold.it/32x32",
+                "age": 39,
+                "eyeColor": "brown",
+                "name": "Franklin Dorsey",
+                "gender": "male",
+                "company": "TRANSLINK",
+                "email": "franklindorsey@translink.com",
+                "phone": "+1 (975) 527-3038",
+                "address": "514 Hoyts Lane, Wanamie, Indiana, 9213",
+                "grade": "일반"
+            },
+            {
+                "_id": "61b05e5a45a5deff825c8996",
+                "id": "Hogan",
+                "pw": "45ac436e-9d47-462d-bdde-71582c7285f1",
+                "index": 2,
+                "picture": "http://placehold.it/32x32",
+                "age": 40,
+                "eyeColor": "blue",
+                "name": "Valeria Cole",
+                "gender": "female",
+                "company": "ZOMBOID",
+                "email": "valeriacole@zomboid.com",
+                "phone": "+1 (857) 431-3434",
+                "address": "415 Java Street, Marshall, Northern Mariana Islands, 2002",
+                "grade": "다이아몬드"
+            },
+            {
+                "_id": "61b05e5a15c37935528a44e5",
+                "id": "Giles",
+                "pw": "d65a68dd-b37e-4755-81d7-2cb7c282c50d",
+                "index": 3,
+                "picture": "http://placehold.it/32x32",
+                "age": 37,
+                "eyeColor": "green",
+                "name": "Ashley Mcclure",
+                "gender": "female",
+                "company": "BRAINQUIL",
+                "email": "ashleymcclure@brainquil.com",
+                "phone": "+1 (972) 568-3309",
+                "address": "130 Garden Place, Forbestown, Minnesota, 3025",
+                "grade": "다이아몬드"
+            },
+            {
+                "_id": "61b05e5ad03a46c13f75f89a",
+                "id": "Obrien",
+                "pw": "2d57696d-fa78-4685-8e88-240d2a7ace62",
+                "index": 4,
+                "picture": "http://placehold.it/32x32",
+                "age": 28,
+                "eyeColor": "green",
+                "name": "Gallagher Bates",
+                "gender": "male",
+                "company": "LYRICHORD",
+                "email": "gallagherbates@lyrichord.com",
+                "phone": "+1 (862) 422-3339",
+                "address": "842 Hausman Street, Snyderville, Oregon, 2490",
+                "grade": "골드"
+            },
+            {
+                "_id": "61b05e5a6c8011b8b6ed841d",
+                "id": "Cathryn",
+                "pw": "8a714590-6bb7-4732-a13c-bf179432887a",
+                "index": 5,
+                "picture": "http://placehold.it/32x32",
+                "age": 40,
+                "eyeColor": "brown",
+                "name": "Wynn Stuart",
+                "gender": "male",
+                "company": "ERSUM",
+                "email": "wynnstuart@ersum.com",
+                "phone": "+1 (827) 459-2716",
+                "address": "224 Battery Avenue, Harold, American Samoa, 3241",
+                "grade": "새싹"
+            },
+            {
+                "_id": "61b05e5ab07726c1806cce86",
+                "id": "Virginia",
+                "pw": "b6f1ceb1-3dc5-4c47-8f4b-90182650dccc",
+                "index": 6,
+                "picture": "http://placehold.it/32x32",
+                "age": 23,
+                "eyeColor": "blue",
+                "name": "Clayton Duncan",
+                "gender": "male",
+                "company": "INTRAWEAR",
+                "email": "claytonduncan@intrawear.com",
+                "phone": "+1 (934) 476-3972",
+                "address": "724 Box Street, Berwind, Kentucky, 736",
+                "grade": "실버"
+            },
+            {
+                "_id": "61b05e5a7aa0088716ed11d4",
+                "id": "Robin",
+                "pw": "2df9e165-bc3f-4526-b603-12025c806a22",
+                "index": 7,
+                "picture": "http://placehold.it/32x32",
+                "age": 20,
+                "eyeColor": "brown",
+                "name": "Alissa Stone",
+                "gender": "female",
+                "company": "ZENTIA",
+                "email": "alissastone@zentia.com",
+                "phone": "+1 (819) 404-3278",
+                "address": "950 Dewitt Avenue, Bergoo, Nebraska, 2818",
+                "grade": "관리자"
+            },
+            {
+                "_id": "61b05e5abc83713079beb9f6",
+                "id": "Rosalyn",
+                "pw": "0cd16a31-0929-4664-8876-b9ac8a083145",
+                "index": 8,
+                "picture": "http://placehold.it/32x32",
+                "age": 40,
+                "eyeColor": "brown",
+                "name": "Andrews Harris",
+                "gender": "male",
+                "company": "PHORMULA",
+                "email": "andrewsharris@phormula.com",
+                "phone": "+1 (962) 415-2660",
+                "address": "720 Railroad Avenue, Como, Utah, 5612",
+                "grade": "관리자"
+            }
+            ]
+
+            class GetUserData {
+                login(아이디, 비밀번호, 성공, 실패){
+                    const data = userdb.find(user => user.id === 아이디 && user.pw === 비밀번호);
+                    if (data){
+                        성공(아이디)
+                    } else {
+                        실패(new Error('로그인 실패!'))
+                    }
+                }
+                getUserDataSet(이용자, 성공, 실패) {
+                    const data = userdb.find(user => user.id === 이용자);
+                    if (data) {
+                        성공({
+                            id : data.id,
+                            picture : data.picture,
+                            name : data.name,
+                            company : data.picture,
+                            email : data.email,
+                            grade : data.grade
+                        });
+                    } else {
+                        실패(new Error('데이터 베이스 로드 실패!'));
+                    }
+                }
+            }
+            const userData = new GetUserData();
+            const id = 'kim';
+            const pw = '1234';
+            userData.login(
+                id,
+                pw,
+                (userID) => {
+                    userData.getUserDataSet(
+                        userID,
+                        (userBasicInfo)=>{
+                            // grade에 따른 콜백을 하나 더 넣어줄 수 있습니다.
+                            console.log(userBasicInfo);
+                        },
+                        (실패)=>{
+                            console.log(실패)
+                        }
+                    )
+                },
+                (실패) => {
+                    console.log(실패)
+                }
+            )
+    </script>
+</body>
+</html>
