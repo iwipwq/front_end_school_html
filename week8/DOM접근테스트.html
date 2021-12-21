@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>돔 접근 테스트</h1>
+    <article class="parent">
+        <figure>
+            <img src="https://imgnews.pstatic.net/image/008/2021/12/19/0004685303_001_20211220041624653.jpg?type=w647" alt="" class="figImg">
+            <figcaption class="figCap">속보) 이럴수가!!</figcaption>
+        </figure>
+    </article>
+
+    <script>
+        //DOM탐색은 코스트가 비싸다 parent를 한번 흝어주고 안쪽에 있는요소만 읽게해주면 좋음
+        const parent = document.querySelector('.parent');
+        // const targetImg = document.querySelector('.figImg');
+        // const targetTxt = document.querySelector('.figCap');
+        const targetImg = parent.querySelector('.figImg');
+        const targetTxt = parent.querySelector('.figCap');
+
+        //setAttribute ->해당 요소의 '속성'을 선택하여 바꾸는 방법
+        targetImg.setAttribute('src', 'https://mimgnews.pstatic.net/image/117/2021/12/20/202112201020908084_1_20211220102102438.jpg?type=w540')
+        targetTxt.textContent = '아이브 안유진';
+
+
+        
+
+    </script>
+</body>
+</html>
